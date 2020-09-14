@@ -36,9 +36,9 @@ class FeeServiceTest {
 
     @Test
     void givenInvoice_whenCalculateFee_thenFeeIsReturned() {
-        var invoice = getInvoice("A01", "2020-10-17", "2020-09-01", "2020-09-01");
+        var invoice = getInvoice("A01", "2020-09-17", "2020-09-01", "2020-09-01");
 
-        assertThat(service.calculate(invoice).intValue()).isEqualTo(53);
+        assertThat(service.calculate(invoice).intValue()).isEqualTo(23);
     }
 
     @Test
